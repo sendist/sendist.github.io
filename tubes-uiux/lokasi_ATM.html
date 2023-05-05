@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BREmo</title>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/style-sendi.css">
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="launch_screen">
+                <div class="container">
+                    <div class="back-header"></div>
+                    <div class="header">
+                        <div class="back-button">
+                            <img src="assets/back-arrow.png" alt="logo">
+
+                        </div>
+                        <div class="title">
+                            <a style="color: #1EA564" id="lokasi-ATM" onclick="changeToATM()">Lokasi ATM</a>
+                                &ensp; &ensp; &ensp; &ensp;
+                            <a id="lokasi-kantor" onclick="changeToKantor()">Lokasi Kantor</a>
+                        </div>
+                    </div>
+                        <iframe class="maps" id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1225.1186585118076!2d107.57396906815254!3d-6.872389354421471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e42098ae6b65%3A0x93c9776826bdd0ef!2sATM%20BRI!5e0!3m2!1sen!2sid!4v1683165789696!5m2!1sen!2sid" width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="search-bar">
+                        <div class="search-icon input-icons">
+                            <i class="fa fa-search icon"></i>
+                            <input class="input-field" id="search-lokasi" type="text" placeholder="Cari Lokasi ATM">
+                        </div>
+                        <div>
+                            <p class="text-pencarian" id="judul-hasil-pencarian" style="color:#1a5fa0">Lokasi ATM Terdekat</p>
+                            <p class="text-pencarian" id="hasil-pencarian">
+                                &ensp; &ensp;
+                                <span id="judul-hasil">ATM BRI</span>
+                                <br>&ensp; &ensp;<span id="lokasi" style="font-weight:400">Jl. Ciwaruga</span>
+                                <hr>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="jarak">
+                        <p id="value-jarak">432 m</p>
+                    </div>
+                </div>
+        </section>
+    </body>
+    <script>
+        function changeToKantor() {
+            document.getElementById("lokasi-kantor").style.color = "#1EA564";
+            document.getElementById("lokasi-ATM").style.color = "white";
+            document.getElementById("search-lokasi").placeholder = "Cari Lokasi Kantor";
+            document.getElementById("maps").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1225.1186585118076!2d107.57396906815254!3d-6.872389354421471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e69e1bb66d29%3A0xe4fd0a3040fef932!2sBri%20Polban!5e0!3m2!1sen!2sid!4v1683166071533!5m2!1sen!2sid"
+            document.getElementById("judul-hasil").innerText = "Bri Polban";
+            document.getElementById("value-jarak").innerHTML= "424 m";
+            document.getElementById("judul-hasil-pencarian").innerHTML= "Lokasi Kantor BRI Terdekat";
+        }
+        function changeToATM() {
+            document.getElementById("lokasi-ATM").style.color = "#1EA564";
+            document.getElementById("lokasi-kantor").style.color = "white";
+            document.getElementById("search-lokasi").placeholder = "Cari Lokasi ATM";
+            document.getElementById("maps").src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1225.1186585118076!2d107.57396906815254!3d-6.872389354421471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68e42098ae6b65%3A0x93c9776826bdd0ef!2sATM%20BRI!5e0!3m2!1sen!2sid!4v1683165789696!5m2!1sen!2sid"
+            document.getElementById("judul-hasil").innerText= "ATM BRI";
+            document.getElementById("value-jarak").innerText = "432 m";
+            document.getElementById("judul-hasil-pencarian").innerText = "Lokasi ATM Terdekat";
+        }
+    </script>
+
+</html>
