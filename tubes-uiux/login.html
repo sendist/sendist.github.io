@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Launch Screen -->
+
+    <section id="login">
+      <div class="circle-bg">
+        <div class="alert" role="alert" id="error">
+          <img src="img/warning.png" alt="Warning" />
+          <p>Please double check your username and password</p>
+        </div>
+        <div class="text-welcome">Welcome</div>
+        <div class="circle-logo">
+          <svg
+            width="246"
+            height="242"
+            viewBox="0 0 246 242"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              opacity="0.6"
+              d="M217.484 207.958C212.435 213.161 207.651 216.523 203.873 219.177C159.484 250.36 106.964 241.276 95.7985 239.055C79.3102 235.779 47.4544 229.444 24.4165 202.911C-10.4315 162.783 -5.01188 99.5521 22.0245 57.8162C26.9675 50.1846 53.0859 7.80908 106.179 1.01586C138.308 -3.0981 175.76 5.19896 202.885 27.4455C259.817 74.151 255.766 168.504 217.484 207.958Z"
+              fill="#D8E0F0"
+            />
+          </svg>
+          <img src="img/login.png" alt="Logo" />
+        </div>
+        <div class="text-login">Login</div>
+      </div>
+      <div class="login-form">
+        <form action="#" method="get" id="form">
+          <div class="mb-1">
+            <label for="username" class="form-label" style="font-size: 14px"
+              >Username</label
+            >
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="username"
+              name="username"
+            />
+          </div>
+          <div class="mb-1">
+            <label for="password" class="form-label" style="font-size: 14px"
+              >Password</label
+            >
+            <input
+              type="password"
+              class="form-control form-control-lg"
+              id="password"
+              name="password"
+            />
+          </div>
+          <label
+            for="forgot-password"
+            class="form-label"
+            style="font-size: 12px; margin-left: 15rem"
+            >Forgot Password?</label
+          >
+          <br />
+          <center>
+            <div class="button">
+              <input
+                type="button"
+                onclick="login()"
+                value="Login"
+                class="btn btn-secondary"
+              />
+              <!-- <button
+                type="button"
+                value="Login"
+                name="login"
+                class="btn btn-secondary"
+              >
+                <a class="login" href="main-page.html">LOGIN</a>
+              </button> -->
+            </div>
+            <div class="button-fingerprint">
+              <button
+                type="button"
+                name="fingerprint"
+                class="btn btn-secondary"
+              >
+                <a class="login" href="#"
+                  ><svg
+                    width="33"
+                    height="36"
+                    viewBox="0 0 33 36"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.1633 4.446C27.0166 4.446 26.8699 4.41 26.7416 4.338C23.2209 2.556 20.177 1.8 16.528 1.8C12.8974 1.8 9.45009 2.646 6.31451 4.338C5.87443 4.572 5.32433 4.41 5.06762 3.978C4.95326 3.76748 4.92761 3.52132 4.99619 3.29244C5.06477 3.06355 5.2221 2.87022 5.43435 2.754C8.84497 0.936 12.5857 0 16.528 0C20.4338 0 23.8444 0.846 27.5851 2.736C28.0435 2.97 28.2085 3.51 27.9701 3.942C27.8976 4.09205 27.7834 4.21896 27.6407 4.30812C27.498 4.39728 27.3325 4.44508 27.1633 4.446ZM0.92353 13.896C0.754505 13.8975 0.588347 13.8531 0.443487 13.7676C0.298626 13.6821 0.180725 13.5589 0.102861 13.4116C0.0249967 13.2643 -0.00978637 13.0987 0.00236945 12.9332C0.0145253 12.7677 0.0731449 12.6088 0.171726 12.474C1.98706 9.954 4.29748 7.974 7.04798 6.588C12.8057 3.672 20.177 3.654 25.9531 6.57C28.7036 7.956 31.014 9.918 32.8293 12.42C32.8997 12.5167 32.9498 12.6262 32.9769 12.742C33.0039 12.8579 33.0073 12.9779 32.9868 13.095C32.9664 13.2122 32.9225 13.3242 32.8577 13.4246C32.7929 13.525 32.7085 13.6118 32.6093 13.68C32.1876 13.968 31.6191 13.878 31.3257 13.464C29.7199 11.2327 27.587 9.41681 25.1096 8.172C19.847 5.526 13.1174 5.526 7.87313 8.19C5.37934 9.45 3.28896 11.25 1.63866 13.518C1.49197 13.77 1.21692 13.896 0.92353 13.896ZM12.384 35.622C12.2637 35.6234 12.1445 35.6002 12.034 35.5537C11.9234 35.5072 11.824 35.4385 11.7422 35.352C10.1469 33.786 9.28505 32.778 8.0565 30.6C6.79127 28.386 6.13115 25.686 6.13115 22.788C6.13115 17.442 10.7887 13.086 16.5097 13.086C22.2307 13.086 26.8883 17.442 26.8883 22.788C26.8883 23.292 26.4849 23.688 25.9714 23.688C25.458 23.688 25.0546 23.292 25.0546 22.788C25.0546 18.432 21.2222 14.886 16.5097 14.886C11.7972 14.886 7.96481 18.432 7.96481 22.788C7.96481 25.38 8.55159 27.774 9.67013 29.718C10.8437 31.788 11.6505 32.67 13.0624 34.074C13.4108 34.434 13.4108 34.992 13.0624 35.352C12.8607 35.532 12.6223 35.622 12.384 35.622ZM25.5314 32.292C23.3493 32.292 21.4239 31.752 19.847 30.69C17.1148 28.872 15.4829 25.92 15.4829 22.788C15.4829 22.284 15.8863 21.888 16.3997 21.888C16.9131 21.888 17.3165 22.284 17.3165 22.788C17.3165 25.326 18.6368 27.72 20.8738 29.196C22.1757 30.06 23.6977 30.474 25.5314 30.474C25.9714 30.474 26.7049 30.42 27.4384 30.294C27.9335 30.204 28.4102 30.528 28.5019 31.032C28.5936 31.518 28.2635 31.986 27.7501 32.076C26.7049 32.274 25.7881 32.292 25.5314 32.292ZM21.8457 36C21.7723 36 21.6806 35.982 21.6073 35.964C18.6918 35.172 16.7848 34.11 14.7861 32.184C13.5195 30.9564 12.5152 29.493 11.832 27.8796C11.1487 26.2662 10.8003 24.5352 10.807 22.788C10.807 19.872 13.3375 17.496 16.4547 17.496C19.5719 17.496 22.1024 19.872 22.1024 22.788C22.1024 24.714 23.8077 26.28 25.9164 26.28C28.0251 26.28 29.7304 24.714 29.7304 22.788C29.7304 16.002 23.771 10.494 16.4364 10.494C11.2287 10.494 6.46121 13.338 4.31582 17.748C3.60068 19.206 3.23395 20.916 3.23395 22.788C3.23395 24.192 3.36231 26.406 4.46251 29.286C4.64588 29.754 4.4075 30.276 3.93075 30.438C3.45399 30.618 2.92223 30.366 2.7572 29.916C1.87363 27.6395 1.42002 25.2241 1.41862 22.788C1.41862 20.628 1.84036 18.666 2.66551 16.956C5.10429 11.934 10.5136 8.676 16.4364 8.676C24.7795 8.676 31.5641 14.994 31.5641 22.77C31.5641 25.686 29.0337 28.062 25.9164 28.062C22.7992 28.062 20.2687 25.686 20.2687 22.77C20.2687 20.844 18.5634 19.278 16.4547 19.278C14.346 19.278 12.6407 20.844 12.6407 22.77C12.6407 25.848 13.8509 28.728 16.0696 30.888C17.8116 32.58 19.4802 33.516 22.0657 34.218C22.5608 34.344 22.8359 34.848 22.7075 35.316C22.6158 35.73 22.2307 36 21.8457 36Z"
+                      fill="#CCE5FF"
+                    />
+                  </svg>
+                </a>
+              </button>
+            </div>
+          </center>
+        </form>
+      </div>
+    </section>
+
+    <!-- Launch Screen -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      function login() {
+        var username = document.forms["form"]["username"].value;
+        var password = document.forms["form"]["password"].value;
+        if (username == "amelianathasa" && password == "12345") {
+          alert("Anda Berhasil Login");
+          document.location.href = "main-page.html";
+        } else {
+          document.getElementById("error").style.display = "block";
+          return false;
+        }
+      }
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

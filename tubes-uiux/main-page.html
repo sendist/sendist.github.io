@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Launch Screen -->
+
+    <section id="main-page">
+      <section id="header">
+        <img src="img/profile.png" class="profile-image" alt="Profile Image" />
+        <div class="ellipse-1"></div>
+        <div class="rectangle-1">
+          <div class="greetings">
+            Good Morning, <br />
+            Amelia Nathasa
+          </div>
+          <div class="col-md-auto">
+            <div class="balance-card">
+              <div class="title-saldo">Saldo Rekening Utama</div>
+              <!-- <div class="title-saldo" style="margin-top: 1rem">Rp.</div> -->
+              <input
+                type="password"
+                class="title-saldo-1"
+                id="saldo"
+                value="123.000.000"
+                style="border: 0px"
+              />
+
+              <img
+                src="img/invisible.png"
+                class="hidden-eye"
+                onclick="handle()"
+                id="eyeicon"
+              />
+
+              <div class="container">
+                <div class="row g-0">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/Tarik Tunai.png" alt="Tarik Tunai" />
+                    </div>
+
+                    <div class="title-menu" style="margin-left: 5px">
+                      Tarik Tunai
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/Transfer.png" alt="Transfer" />
+                    </div>
+                    <div class="title-menu" style="margin-left: 13px">
+                      Transfer
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/Brizzi.png" alt="Brizzi" />
+                    </div>
+                    <div class="title-menu" style="margin-left: 23px">
+                      Brizzi
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/Dompet Digital.png" alt="Dompet Digital" />
+                    </div>
+                    <div
+                      class="title-menu text-center"
+                      style="margin-left: 15px"
+                    >
+                      Dompet <br />
+                      Digital
+                    </div>
+                  </div>
+                </div>
+                <div class="row g-0" style="margin-top: 91px">
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/internet.png" alt="Internet" />
+                    </div>
+                    <div class="title-menu" style="margin-left: 15px">
+                      Internet
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/Budgeting.png" alt="Budgeting" />
+                    </div>
+                    <div class="title-menu" style="margin-left: 8px">
+                      Budgeting
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/flash.png" alt="Internet" />
+                    </div>
+                    <div class="title-menu" style="margin-left: 15px">
+                      Electric
+                    </div>
+                  </div>
+                  <div class="col-md-3 col-sm-3 col-xs-3">
+                    <div class="rectangle-2"></div>
+                    <div class="menu-icon">
+                      <img src="img/application.png" alt="More Menu" />
+                    </div>
+                    <div class="title-menu" style="margin-left: 23px">More</div>
+                  </div>
+                </div>
+              </div>
+              <div class="text">Finalcial Records</div>
+              <div class="card-record">
+                <div class="arrow">
+                  <img src="img/income.png" alt="Income" />
+                  <div class="textcome">Income</div>
+                  <div class="price">Rp99.000.000</div>
+                </div>
+                <div class="border-1"></div>
+                <div class="arrow" style="margin-left: 150px">
+                  <img src="img/outcome.png" alt="Outcome" />
+                  <div class="textcome">Outcome</div>
+                  <div class="price">Rp29.000.000</div>
+                </div>
+
+                <div class="border-2"></div>
+                <div class="textcome" style="margin-top: 6.8rem">
+                  Difference <b>+70.000.000</b>
+                </div>
+              </div>
+              <div class="chat">
+                <a href="live-chat.html"
+                  ><img class="chat-image" src="img/chat.png" alt="Live Chat"
+                /></a>
+              </div>
+
+              <div class="bar">
+                <div class="home">
+                  <svg
+                    width="35.5"
+                    height="36"
+                    viewBox="0 0 33 31"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5.49998 12.9167L16.5 3.875L27.5 12.9167L27.5 25.8333H20.625V20.6667C20.625 19.639 20.1904 18.6533 19.4168 17.9266C18.6432 17.1999 17.594 16.7917 16.5 16.7917C15.406 16.7917 14.3568 17.1999 13.5832 17.9266C12.8096 18.6533 12.375 19.639 12.375 20.6667V25.8333H5.49999L5.49998 12.9167Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <div class="label-bar" style="margin-top: -0.09rem">Home</div>
+                  <div class="ellipse-bar"></div>
+                </div>
+                <div class="mutasi">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 30 28"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M22.5 3.50001V3.50001C23.197 3.50001 23.5455 3.50001 23.8353 3.55765C25.0253 3.79437 25.9556 4.72467 26.1924 5.91474C26.25 6.20454 26.25 6.55303 26.25 7.25001L26.25 9.5C26.25 9.97141 26.25 10.2071 26.1036 10.3536C26.1036 10.3536 26.1036 10.3536 26.1036 10.3536C25.9571 10.5 25.7214 10.5 25.25 10.5L18.75 10.5M22.5 3.50001V3.50001C21.803 3.50001 21.4545 3.50001 21.1647 3.55765C19.9747 3.79437 19.0444 4.72467 18.8076 5.91474C18.75 6.20454 18.75 6.55303 18.75 7.25001L18.75 10.5M22.5 3.50001L7.75 3.50001C5.86438 3.50001 4.92157 3.50001 4.33579 4.0858C3.75 4.67158 3.75 5.61439 3.75 7.50001L3.75 24.5L7.5 23.3333L11.25 24.5L15 23.3333L18.75 24.5L18.75 10.5"
+                      stroke="black"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M8.75 8.16667L13.75 8.16667"
+                      stroke="#222222"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M8.75 17.5L12.5 17.5"
+                      stroke="#222222"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <div class="label-bar">Mutasi</div>
+                </div>
+                <div class="tombol-scan">
+                  <svg
+                    width="32"
+                    height="27"
+                    viewBox="0 0 32 27"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.10691 13.0309C0.496001 13.0309 7.96112e-07 12.5446 8.31167e-07 11.9441C8.66139e-07 11.345 0.496001 10.8601 1.10691 10.8601L2.65164 10.8601L2.65164 5.68249C2.65164 2.54742 5.25091 3.12737e-07 8.44509 7.30916e-07L10.7622 1.03427e-06C11.3745 1.11444e-06 11.8705 0.486379 11.8705 1.08686C11.8705 1.68592 11.3745 2.1723 10.7622 2.1723L8.44509 2.1723C6.47127 2.1723 4.86546 3.74554 4.86545 5.68249L4.86545 10.8601L8.68073 10.8601L8.68073 9.41805C8.66618 7.61374 10.1425 6.13892 11.9825 6.1218L20.0175 6.1218C21.856 6.13892 23.3324 7.61374 23.3178 9.41805L23.3178 10.8601L27.1331 10.8601L27.1331 5.67679C27.1331 3.74697 25.5316 2.17658 23.5636 2.17373L21.1956 2.1723C20.5847 2.1723 20.0887 1.68592 20.0887 1.08686C20.0902 0.48638 20.5847 2.32022e-06 21.1971 2.40039e-06L23.5665 0.00142941C26.7535 0.00428322 29.3484 2.55028 29.3484 5.67679L29.3484 10.8601L30.8916 10.8601C31.5026 10.8601 32 11.345 32 11.9441C32 12.5446 31.5025 13.0309 30.8916 13.0309L1.10691 13.0309ZM11.9818 20.738C11.1018 20.738 10.2567 20.3914 9.64146 19.7738C9.02182 19.1505 8.67855 18.3132 8.68 17.4417L8.68 15.6303C8.68728 15.4178 8.86037 15.2452 9.07709 15.2395L22.9244 15.2395C23.1396 15.2466 23.3127 15.4192 23.3172 15.6303L23.3172 17.4417C23.3331 19.246 21.8553 20.7194 20.0167 20.738L11.9818 20.738ZM8.44567 26.1814C5.25004 26.1814 2.65222 23.634 2.65222 20.5003L2.65222 17.8003C2.65222 17.2012 3.14677 16.7134 3.75913 16.7134C4.37004 16.7134 4.86604 17.2012 4.86604 17.8003L4.86604 20.5003C4.86604 22.4359 6.47186 24.0105 8.44568 24.0105L10.7628 24.0105C11.3737 24.0105 11.8697 24.4955 11.8697 25.0945C11.8697 25.695 11.3737 26.1814 10.7628 26.1814L8.44567 26.1814ZM21.1961 26.1818C20.5852 26.1818 20.0892 25.6954 20.0892 25.095C20.0892 24.4959 20.5837 24.0095 21.1961 24.0095L23.5655 24.0081C25.5321 24.0052 27.1321 22.4349 27.1321 20.505L27.1321 17.8007C27.1321 17.2017 27.6295 16.7139 28.2404 16.7139C28.8513 16.7139 29.3473 17.2017 29.3473 17.8007L29.3473 20.505C29.3473 23.6315 26.7539 26.1775 23.567 26.1804L21.1961 26.1818Z"
+                      fill="white"
+                    />
+                  </svg>
+                </div>
+                <div class="lokasi">
+                  <svg
+                    width="30"
+                    height="30"
+                    viewBox="0 0 29 29"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect width="29" height="29" fill="white" />
+                    <path
+                      d="M4.81784 20.8205L5.51015 21.109L4.81784 20.8205ZM3.8109 23.2372L4.50321 23.5256L3.8109 23.2372ZM25.1891 23.2372L24.4968 23.5256L25.1891 23.2372ZM24.1822 20.8205L24.8745 20.5321L24.1822 20.8205ZM19.3333 18.5833C18.9191 18.5833 18.5833 18.9191 18.5833 19.3333C18.5833 19.7476 18.9191 20.0833 19.3333 20.0833V18.5833ZM9.66667 20.0833C10.0809 20.0833 10.4167 19.7476 10.4167 19.3333C10.4167 18.9191 10.0809 18.5833 9.66667 18.5833V20.0833ZM22.2083 11.0093C22.2083 13.1384 21.0016 15.6588 19.339 17.6832C18.5169 18.6842 17.6108 19.5292 16.7399 20.1177C15.8528 20.717 15.0772 21 14.5 21V22.5C15.5088 22.5 16.5834 22.0337 17.5796 21.3606C18.592 20.6766 19.6022 19.7262 20.4982 18.6352C22.2718 16.4756 23.7083 13.6257 23.7083 11.0093H22.2083ZM14.5 21C13.9229 21 13.1472 20.717 12.2601 20.1177C11.3892 19.5292 10.4831 18.6842 9.66097 17.6832C7.99839 15.6588 6.79167 13.1384 6.79167 11.0093H5.29167C5.29167 13.6257 6.72818 16.4756 8.50179 18.6352C9.39777 19.7262 10.408 20.6766 11.4204 21.3606C12.4166 22.0337 13.4912 22.5 14.5 22.5V21ZM6.79167 11.0093C6.79167 6.66674 10.2539 3.16667 14.5 3.16667V1.66667C9.40329 1.66667 5.29167 5.86067 5.29167 11.0093H6.79167ZM14.5 3.16667C18.7461 3.16667 22.2083 6.66674 22.2083 11.0093H23.7083C23.7083 5.86067 19.5967 1.66667 14.5 1.66667V3.16667ZM16.7708 10.875C16.7708 12.1292 15.7541 13.1458 14.5 13.1458V14.6458C16.5826 14.6458 18.2708 12.9576 18.2708 10.875H16.7708ZM14.5 13.1458C13.2459 13.1458 12.2292 12.1292 12.2292 10.875H10.7292C10.7292 12.9576 12.4174 14.6458 14.5 14.6458V13.1458ZM12.2292 10.875C12.2292 9.62086 13.2459 8.60417 14.5 8.60417V7.10417C12.4174 7.10417 10.7292 8.79243 10.7292 10.875H12.2292ZM14.5 8.60417C15.7541 8.60417 16.7708 9.62086 16.7708 10.875H18.2708C18.2708 8.79243 16.5826 7.10417 14.5 7.10417V8.60417ZM4.12554 20.5321L3.11859 22.9487L4.50321 23.5256L5.51015 21.109L4.12554 20.5321ZM6.04167 27.3333H22.9583V25.8333H6.04167V27.3333ZM25.8814 22.9487L24.8745 20.5321L23.4899 21.109L24.4968 23.5256L25.8814 22.9487ZM21.9514 18.5833H19.3333V20.0833H21.9514V18.5833ZM7.04861 20.0833H9.66667V18.5833H7.04861V20.0833ZM24.8745 20.5321C24.3828 19.352 23.2298 18.5833 21.9514 18.5833V20.0833C22.6242 20.0833 23.2311 20.4879 23.4899 21.109L24.8745 20.5321ZM22.9583 27.3333C25.218 27.3333 26.7505 25.0346 25.8814 22.9487L24.4968 23.5256C24.9542 24.6235 24.1476 25.8333 22.9583 25.8333V27.3333ZM3.11859 22.9487C2.24949 25.0346 3.782 27.3333 6.04167 27.3333V25.8333C4.85237 25.8333 4.04579 24.6235 4.50321 23.5256L3.11859 22.9487ZM5.51015 21.109C5.76893 20.4879 6.37578 20.0833 7.04861 20.0833V18.5833C5.77023 18.5833 4.61722 19.352 4.12554 20.5321L5.51015 21.109Z"
+                      fill="black"
+                    />
+                  </svg>
+                  <div class="label-bar">Lokasi</div>
+                </div>
+                <div class="akun">
+                  <svg
+                    width="26"
+                    height="26"
+                    viewBox="0 0 23 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M11.4546 12.5C8.56753 12.5 6.22728 10.1598 6.22728 7.27273V6.22727C6.22728 3.34025 8.56753 1 11.4546 1C14.3416 1 16.6818 3.34025 16.6818 6.22727V7.27273C16.6818 10.1598 14.3416 12.5 11.4546 12.5Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M21.9091 20.2656C21.9091 18.6447 20.8459 17.2192 19.2918 16.7571C17.4539 16.2103 14.7415 15.6364 11.4545 15.6364C8.16764 15.6364 5.4552 16.2103 3.6173 16.7571C2.06323 17.2192 1 18.6447 1 20.2656V24H21.9091V20.2656Z"
+                      stroke="black"
+                      stroke-width="1.5"
+                      stroke-linecap="square"
+                    />
+                  </svg>
+                  <div class="label-bar">Akun</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tulisan BreMo -->
+    </section>
+
+    <!-- Launch Screen -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+      function handle() {
+        var saldo = document.getElementById("saldo");
+        var eyeicon = document.getElementById("eyeicon");
+
+        if (saldo.type == "password") {
+          saldo.type = "text";
+          eyeicon.src = "img/show.png";
+        } else {
+          saldo.type = "password";
+          eyeicon.src = "img/invisible.png";
+        }
+      }
+    </script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
