@@ -49,6 +49,7 @@ body{
     overflow-x: hidden;
     margin: 0;
     background-color: white;
+    font-family: Poppins;
     /* vertical-align: middle; */
 
 }
@@ -71,10 +72,11 @@ html{
     background-image: linear-gradient( #2A3785, #0F1644);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    position: absolute;
+    position: fixed;
     font-family: QuickSand;
     font-weight: bold;
     color: white;
+    z-index: 1;
 }
 
 .back-header {
@@ -83,13 +85,18 @@ html{
     background-color: aqua;
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
-    position: absolute;
+    position: fixed;
+    z-index: 1;
 }
 
 .back-button {
     margin-left: 25px;
     margin-top: 50px;
     position: absolute;
+}
+
+.back-button:hover {
+    opacity: 50%;
 }
 
 #launch-screen{
@@ -213,6 +220,10 @@ a {
     bottom: 185px;
 }
 
+.button:hover, #button-popup:hover {
+  opacity: 80%;
+}
+
 #background-OTP {
     background-color: #eff5fe;
     height: 95vh;
@@ -266,4 +277,40 @@ a {
     background-color: white;
     position: fixed;
     border-radius: 10px;
+}
+
+#biometric-bottom-logo:hover {
+    opacity: 50%;
+}
+
+.content-container {
+    width: 330px;
+    height: 330px;
+    margin: 120px 35px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -3px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    position: absolute;
+    font-weight: light;
+    font-size: 14px;
+}
+
+#quick-send-search {
+    width: 280px;
+    height: 28px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.quick-send-contact {
+    text-align: center;
+    width: 70px;
+    height: 80px;
+    position: absolute;
+    margin-top:20px;
+}
+
+.quick-send-contact:hover {
+    opacity: 50%;
 }
