@@ -54,6 +54,8 @@
       height: 120vh;
       background-color: white;
     }
+
+    
   }
 
 
@@ -97,6 +99,7 @@
     height: 120vh;
     background-color: white;
   }
+
 
   }
   
@@ -151,6 +154,8 @@
       height: 120vh;
       background-color: white;
     }
+
+    
   }
   
   /* Tampilan layar besar */
@@ -195,7 +200,6 @@
 
     #budgeting{
       height: 150vh;
-      
       background-color: white;
     }
 
@@ -203,8 +207,11 @@
       height: 120vh;
       background-color: white;
     }
+
+    
   }
   
+
 
 
 #launch-screen .title-bri h1{
@@ -238,6 +245,21 @@
   background-color: #011A51;
 }
 
+.back-button {
+  margin-left: 25px;
+  margin-top: 50px;
+  position: absolute;
+}
+
+.back-button:hover {
+  opacity: 50%;
+}
+
+.title {
+    margin: 50px;
+    text-align: center;
+}
+
 #tambah-budgeting .button button{
   max-width: 500px;
   margin-top: 50px;
@@ -258,8 +280,7 @@ body{
     width: 100%;
     max-width: 400px;
     max-height: 100vh;
-    /* vertical-align: middle; */
-
+    /* margin: 0; */
 }
 
 html{
@@ -295,14 +316,28 @@ html{
   margin-top: -20px;
 }
 
-/* .navbar-budgeting .icon-plus img{
+.header {
+  height: 100px;
+  width: 25rem;
+  background-image: linear-gradient( #2A3785, #0F1644);
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
   position: fixed;
-  
-  top: 0;
+  font-family: QuickSand;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
 
-  margin-left: 350px;
-  
-} */
+.back-header {
+  height: 103px;
+  width: 25rem;
+  background-color: aqua;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: fixed;
+  z-index: 1;
+}
 
 .navbar-budgeting .icon-plus img{
   /* position: fixed;
@@ -314,7 +349,7 @@ html{
 }
 
 #dompet-budgeting{
-  height: 100vh;
+  height: 110vh;
   background-color: white;
 }
 
@@ -322,7 +357,6 @@ html{
   background-color: #EFF5FE;
   width: 70%;
   height: 140px;
-  margin-top: 30px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5),
               -2px -2px 10px rgba(255, 255, 255, 0.5);
@@ -350,7 +384,6 @@ html{
   background-color: #fff;
   width: 70%;
   height: 170px;
-  margin-top: 30px;
   border-radius: 10px;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5),
               -2px -2px 10px rgba(255, 255, 255, 0.5);
@@ -413,7 +446,6 @@ html{
 
 #dompet-budgeting .card .icon .tombol-icon:hover{
   opacity: 0.5;
-  /* transition: opacity 0.5s ease-in-out; */
 }
 
 #dompet-budgeting .card .icon a{
@@ -433,7 +465,7 @@ html{
 #dompet-budgeting .card-goals h3{
   font-size: 16px;
   font-weight: 600;
-  padding-top: 7px;
+  padding-top: 4px;
   text-align: start;
   transform: translateX(-10px);
 }
@@ -441,7 +473,7 @@ html{
 #dompet-budgeting .card-goals h4{
   font-size: 13px;
   padding-top: 8px;
-  padding-right: 5px;
+  /* padding-right: 1px; */
   text-align: end;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -452,12 +484,22 @@ html{
 #dompet-budgeting .card-goals h2{
   font-size: 13px;
   margin-top: 10px;
-  padding-left: 5px;
   text-align: start;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   /* color: #2743F3; */
   /* text-decoration: underline; */
+}
+
+#dompet-budgeting .card-goals .persen{
+  font-size: 13px;
+  font-weight: bold;
+
+}
+
+#dompet-budgeting .card-goals{
+  padding: 5px;
+  padding-top: 8px;
 }
 
 .card-main h2{
@@ -504,9 +546,6 @@ html{
   color: #000;
 }
 
-
-
-
 #tambah-budgeting h1{
   font-size: 18px;
   font-weight: bold;
@@ -514,8 +553,100 @@ html{
   margin-left: 20px;
 }
 
+.content{
+  padding-top: 35%;
+}
+
+#tambah-budgeting .content{
+  padding-top: 30%;
+}
+
+.add-button{
+  position: absolute;
+  top: 50%;
+  right: 5%;
+}
 
 
+.overlay-add-balance{
+  width: 100%;
+  height: 46.5vh;
+  background-color: #F1F6F5;
+  margin-top: -40px;
+  display: none;
+}
 
+.overlay-add-balance .title{
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
 
+.overlay-add-balance .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
 
+.overlay-add-balance hr{
+  width: 80%;
+  border: none;
+  border-top: 3px solid #000;
+  height: 3px;
+}
+
+.overlay-add-balance .option-balance{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.overlay-add-balance .option-balance .saldo{
+  width: 19%;
+  height: 27px;
+  background-color: #fff;
+  border-radius: 45%;
+}
+
+.overlay-add-balance .option-balance p{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.overlay-add-balance .keterangan{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-right: 30px;
+  padding-top: 13px;
+}
+
+.keterangan .from{
+  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #7E7676;
+}
+
+.keterangan .saldo{
+  font-size: 13px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+}
+
+#dompet-budgeting .button button{
+  max-width: 500px;
+  margin-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 20px;
+  background-color: #2A3785;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+}
