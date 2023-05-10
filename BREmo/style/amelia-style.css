@@ -1,280 +1,434 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
-
 /* Tampilan layar kecil */
-@media (max-width: 767px) {
-  /* CSS untuk tampilan layar kecil */
-  body {
+@media (max-width: 767px) { 
+    /* CSS untuk tampilan layar kecil */
+    body {
+        overflow-x: hidden;
+    }
+
+    #launch-screen .logo .header .mini-header .card img{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .card img{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .profile-image{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .menu{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .bar{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+  }
+  
+  /* Tampilan layar medium */
+  @media (min-width: 768px) and (max-width: 991px) { 
+    /* CSS untuk tampilan layar medium */
+ 
+    #launch-screen .logo .header .mini-header .card img{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .card img{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .profile-image{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+    #launch-screen .menu{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+    #launch-screen .bar{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+  }
+  
+  /* Tampilan layar besar */
+  @media (min-width: 992px) { 
+
+    /* CSS untuk tampilan layar besar */
+    #launch-screen .logo .header .mini-header .card img{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .card img{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+
+    #launch-screen .profile-image{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+    #launch-screen .menu{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+    #launch-screen .bar{
+        width: 200px;
+        margin-top: 140px;
+        /* margin-left: 20px; */
+        border-radius: 50%;
+    }
+  }
+
+body{
+    /* background-color: #2A3785; */
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
     overflow-x: hidden;
-  }
+    margin: 0;
+    background-color: white;
+    /* vertical-align: middle; */
 
-  #launch-screen .dompet img {
-    width: 200px;
-    margin-top: 140px;
-    /* margin-left: 20px; */
-    border-radius: 50%;
-  }
 }
 
-/* Tampilan layar medium */
-@media (min-width: 768px) and (max-width: 991px) {
-  /* CSS untuk tampilan layar medium */
-
-  #launch-screen .dompet img {
-    width: 200px;
-    margin-top: 140px;
-    /* margin-left: 20px; */
-    border-radius: 50%;
-  }
-}
-
-/* Tampilan layar besar */
-@media (min-width: 992px) {
-  /* CSS untuk tampilan layar besar */
-  #launch-screen .dompet img {
-    width: 200px;
-    margin-top: 140px;
-    /* margin-left: 20px; */
-    border-radius: 50%;
-  }
-}
-
-/* Colors */
-:root {
-  --white: #ffffff;
-  --blue: #2a3785;
-  --grey: #f1f0f0;
-  --black: #000;
-}
-
-#launch-screen {
-  background-color: #2a3785;
-  height: 100%;
-  width: 100%;
-}
-
-#launch-screen .title-bri h1 {
-  /* margin-left: 20px; */
-  margin-top: 30px;
-  /* padding-left: 10px; */
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: white;
-  font-size: 60px;
-}
-
-#launch-screen .title-bri h2 {
-  margin-left: 40px;
-  margin-top: -20px;
-  /* margin-bottom: 100px; */
-  /* padding-left: 10px; */
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  color: #fd7900;
-  font-size: 50px;
-}
-
-#launch-screen .button button {
-  max-width: 400px;
-  margin-top: 15vh;
-  padding-left: 70px;
-  padding-right: 70px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #011a51;
-}
-
-#launch-screen .title-get-started {
-  text-decoration: none;
-  color: var(--white);
-}
-
-body {
-  /* background-color: #2A3785; */
-  height: 100vh;
-  width: 100%;
-  max-width: 400px;
-  /* vertical-align: middle; */
-}
-
-html {
+html{
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #ccc;
 }
 
-#main-page {
-  background-color: var(--grey);
+
+.header {
+    position: absolute;
+    margin-left: -15px;
+}
+
+.mini-header {
+    height: 100px;
+    width: 400px;
+    background-image: linear-gradient( #2A3785, #0F1644);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-left: -15px;
+    position: absolute;
+    font-family: QuickSand;
+    font-weight: bold;
+    color: white;
+}
+
+.header .logo{
+    margin-left: 80px;
+    margin-top: -200px;
+}
+
+.header .logo img{
+    position: absolute;
+    left: 20px;
+    top: 95px;
+}
+
+.back-header {
+    height: 103px;
+    width: 400px;
+    background-color: aqua;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    position: absolute;
+    margin-left: -15px;
+}
+
+.back-button {
+    margin-left: 25px;
+    margin-top: 50px;
+    position: absolute;
+    
+}
+
+#launch-screen{
+  background-color: #2A3785;
   height: 100%;
   width: 100%;
 }
 
-#main-page .rectangle-1 {
-  width: 400px;
-  height: 280px;
-  background: linear-gradient(180deg, #2a3785 0%, #2b3885 53.65%, #000000 100%);
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 80px;
+.title {
+    margin: 95px;
+    font-weight: 700;
+    position: absolute;
+    font-family: 'Poppins';
 }
 
-#main-page .greetings {
-  padding-top: 40px;
-  padding-left: 50px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  letter-spacing: 0.5px;
-
-  color: #ffffff;
+a {
+    text-decoration: none;
+    color: gray;
 }
 
-#main-page .profile-image {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  border-radius: 15px;
-  margin-left: 20rem;
-  margin-top: 2rem;
-}
-
-#main-page .ellipse-1 {
+.input-field {
+  font-family: Quicksand;
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
   box-sizing: border-box;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  margin-left: 22.5rem;
-  margin-top: 4.5rem;
-
-  background: #20c968;
-  border: 0.5px solid #ffffff;
-  border-radius: 100%;
+  text-align: center;
 }
 
-#main-page .balance-card {
-  width: 320px;
-  height: 265px;
-  margin-top: 2rem;
-  margin-left: 2.6rem;
-  background: #ffffff;
-  box-shadow: 0px 9px 50px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+.input-icons i {
+    position: absolute;
+}
+          
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+    
+.icon {
+    padding: 20px;
+    min-width: 20px;
+    /* margin-top: 10px; */
 }
 
-#main-page .title-saldo {
-  position: absolute;
-  width: 180px;
-  height: 17px;
-  margin-left: 1.5rem;
-  margin-top: 0.9rem;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14.5px;
-  line-height: 20px;
-
-  color: #000000;
+.container {
+    width: 400px;
+    height: 120vh;
+    background-color: white;
 }
 
-#main-page .title-saldo-1 {
-  position: absolute;
-  width: 173px;
-  height: 17px;
-  margin-left: 1.5rem;
-  margin-top: 3.1rem;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 20px;
-
-  color: #000000;
+.form {
+    max-width: 350px;
+    height: 100%;
+    margin-top: 103px;
+    margin-left: 25px;
+    position: absolute;
+    font-family: Poppins;
+    font-weight: 600;
+    width: 325px;
 }
 
-#main-page .hidden-eye {
-  position: absolute;
-  width: 17px;
-  height: 17px;
-  margin-left: 12rem;
-  margin-top: 2.9rem;
+label {
+    position: absolute;
+    background-color: white;
+    margin-top: -10px;
+    margin-left: 30px;
+    
 }
 
-#main-page .rectangle-2 {
-  position: fixed;
-  width: 55px;
-  height: 55px;
-  margin-left: 0.6rem;
-  margin-top: 5.3rem;
-
-  background: #214083;
-  opacity: 0.2;
-  border-radius: 15px;
+.input-wrapper{
+    margin-top: 30px;
+    font-weight: 400;
 }
 
-#main-page .title-menu {
-  margin-top: 9rem;
-  position: absolute;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 16px;
+.button{
+    width: 320px;
+    margin-top: 15vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2a3785;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    font-family: Poppins;
+    font-weight: medium;
+  
+    position: fixed;
+    bottom: 30px;
+  }
 
-  color: #000000;
+.alert {
+    position: absolute;
+    height: 3rem;
+    width: 25rem;
+    background-color: #a01212;
+  }
+
+.alert img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 1.1rem;
 }
 
-#main-page .menu-image {
-  position: fixed;
-  width: 29px;
-  height: 25.28px;
-  z-index: 99;
+.alert p {
+    font-size: 12px;
+    margin-top: -2.3rem;
+    color: var(--white);
+    margin-left: 2rem;
 }
 
-#main-page .text {
-  position: absolute;
-  width: 180px;
-  height: 17px;
-  margin-left: 6rem;
-  margin-top: 11.7rem;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 20px;
+#error {
+    display: none;
+  }
+  
+#block {
+    display: none;
+  }
 
-  color: #000000;
+#kurang-saldo{
+    display: none;
 }
 
-#main-page .card-record {
-  width: 315px;
-  height: 135px;
-  margin-top: 13.5rem;
-  margin-left: 0rem;
-  background: #ffffff;
-  box-shadow: 0px 9px 50px rgba(0, 0, 0, 0.1);
-  border-radius: 20px;
+.card{
+    position: absolute;
+    margin-left: -10px;
+    margin-top: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 9px 50px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 10px 10px;
+    
 }
 
-#main-page .border-1 {
-  position: absolute;
-  width: 103px;
-  height: 0px;
-  margin-top: 3.2rem;
-  margin-left: 6.6rem;
-  border: 0.1px solid #c0c0c0;
-  transform: rotate(90deg);
-}
-#main-page .border-2 {
-  position: absolute;
-  width: 315px;
-  height: 0px;
-  margin-top: 6.4rem;
-  margin-left: 0rem;
-  border: 0.1px solid #c0c0c0;
+.card-text{
+    position: absolute;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
 }
 
-#main-page .bar {
-  position: fixed;
+.verification-password{
+    position: fixed;
+    width: 400px;
+    height: 500px;
+    bottom: 0px;
+    margin-left: -40px;
+
+    background: #FFFFFF;
+}
+
+.shadow-popup .verification-password {
+    min-width: 400px;
+    max-width: 400px;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.profile-image{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(0px 4.04805px 10.1201px rgba(0, 0, 0, 0.2));
+    border-radius: 18.2162px;
+    margin-left: 200px;
+    margin-top: -45px;
+}
+
+.ellipse-online{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    margin-left: 240px;
+    margin-top: -5px;
+
+    background: #20C968;
+    border: 1px solid #FFFFFF;
+    border-radius: 100%;
+}
+
+.col-md-3 {
+    color: #000000;
+    margin-top: 280px;
+}
+
+.rectangle-2 {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    margin-left: 4rem;
+    margin-top: -2rem;
+  
+    background: #214083;
+    opacity: 0.2;
+    border-radius: 15px;
+  }
+
+.menu-icon img {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+   margin-top: 250px;
+  }
+
+.title-menu{
+    color: #000000;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.arrow img{
+    position: absolute;
+    width: 25px;
+}
+
+.border-1 {
+    position: absolute;
+    width: 103px;
+    height: 0px;
+    margin-top: 3.2rem;
+    margin-left: 6.6rem;
+    border: 0.1px solid #c0c0c0;
+    transform: rotate(90deg);
+  }
+
+  .border-2{
+    position: absolute;
+    width: 315px;
+    height: 0px;
+    margin-top: 6.4rem;
+    margin-left: 0rem;
+    border: 0.1px solid #c0c0c0;
+  }
+
+.bar{
+    position: fixed;
   width: 400px;
   height: 69px;
   margin-top: 6rem;
@@ -282,374 +436,228 @@ html {
 
   background: #ffffff;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
-}
-
-#main-page .chat {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  margin-top: 1.3rem;
-  margin-left: 16.5rem;
-
-  background: #eff5fe;
-  border-radius: 100px;
-  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.3));
-}
-
-#main-page .chat-image {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  margin-top: 0.7rem;
-  margin-left: 0.9rem;
-}
-
-#main-page .bar svg {
-  margin-left: 2rem;
-  margin-top: 0.4rem;
-}
-
-#main-page .home {
+  bottom: 0px;
   position: fixed;
-  margin-left: 0.2rem;
-  margin-top: -0.001rem;
 }
 
-#main-page .mutasi {
-  position: fixed;
-  margin-left: 5rem;
-  margin-top: 0.1rem;
+.tombol-scan{
+    position: absolute;
+    width: 58px;
+    height: 54px;
+    margin-left: 11rem;
+    margin-top: -1.5rem;
+    background: #011a51;
+    border-radius: 20px;
+  }
+
+ #transfer:hover{
+    opacity: 0.25;
+ }
+ 
+ #budgeting:hover{
+    opacity: 0.25;
+ }
+
+ #location:hover{
+  opacity: 0.25;
 }
 
-#main-page .lokasi {
-  position: fixed;
-  margin-left: 14rem;
-  margin-top: 0.2rem;
+ .chat-image {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-top: 12.5rem;
+    margin-left: -0.5rem;
+    border-radius: 100%;
+  }
+
+  .bubble-chat {
+    position: absolute;
+    width: 330px;
+    height: 74px;
+    margin-left: 2.1rem;
+    margin-top: 7rem;
+  
+    background: #C0C0C0;
+    box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+  }
+
+  .text-chat {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12.5px;
+    line-height: 16px;
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+    color: #000000;
+  }
+
+  .time {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 10px;
+    position: absolute;
+  
+    margin-left: 3rem;
+    margin-top: 15.8rem;
+  }
+  
+  .kolom-chat {
+    position: absolute;
+    width: 268px;
+    height: 32px;
+    margin-left: 3rem;
+    margin-top: -1.9rem;
+  }
+  
+  .text{
+    position: absolute;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+  }
+
+  .text-detail{
+    position: absolute;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    font-size: 12px;
+  }
+
+  .send{
+    width: 100px; 
+    height: 35px; 
+    background-color: #d3d3d3; 
+    color: gray; 
+    padding-left: 10px; 
+    padding-top: 10px; 
+    margin-top: 0px; 
+    font-size: 12px;
+  }
+
+  .total-payment{
+    background-color: #b0ccdd;
+    position: absolute;
+    width: 295px;
+    height: 35px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: 15px; 
+    font-size: 13px;
+  }
+
+  .total-payment p{
+    position: absolute;
+  }
+
+  #shadow-popup {
+    min-width: 400px;
+    max-width: 400px;
+    height: 120vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    margin-left: 0px;
 }
 
-#main-page .akun {
-  position: fixed;
-  margin-left: 19rem;
-  margin-top: 0.3rem;
+#popup-success {
+    width: 330px;
+    height: 390px;
+    margin: 200px 35px 0px 35px;
+    background-color: white;
+    position: fixed;
+    border-radius: 10px;
 }
 
-#main-page .tombol-scan {
-  position: absolute;
-  width: 58px;
-  height: 54px;
-  margin-left: 11rem;
-  margin-top: -1.5rem;
-  background: #011a51;
-  border-radius: 20px;
-}
-
-#main-page .tombol-scan svg {
-  position: fixed;
-  margin-left: 0.8rem;
-  margin-top: 0.8rem;
-}
-
-#main-page .label-bar {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
-  margin-top: 0.1rem;
-  margin-left: 2.1rem;
-
-  color: #000000;
-}
-
-#main-page .ellipse-bar {
-  position: absolute;
-  width: 0.3rem;
-  height: 0.3rem;
-  border-radius: 100%;
-  margin-left: 2.9rem;
-  margin-top: 0rem;
-
-  background: #000000;
-}
-
-#main-page .menu-icon img {
-  position: absolute;
-  width: 35px;
-  height: 35px;
-  margin-top: 6rem;
-  margin-left: 1.2rem;
-}
-
-#main-page .arrow img {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  margin-left: 2rem;
-  margin-top: 1.5rem;
-}
-
-#main-page .textcome {
-  position: absolute;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  margin-left: 3.8rem;
-  margin-top: 1.5rem;
-
-  color: #000000;
-}
-
-#main-page .price {
-  position: absolute;
-  font-weight: 700;
-  margin-left: 2rem;
-  margin-top: 3.5rem;
-}
-
-#live-chat {
-  background-color: var(--grey);
-  height: 100%;
-  width: 100%;
-}
-
-#live-chat .rectangle-2 {
+#enter-password {
   width: 400px;
-  height: 100px;
-  background: linear-gradient(180deg, #2a3785 0%, #2b3885 53.65%, #000000 100%);
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-#live-chat .rectangle-3 {
-  width: 400px;
-  height: 103px;
-  background: #87f0ff;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-}
-
-#live-chat .title {
+  height: 100vh;
+  margin: 200px 35px 0px 35px;
+  background-color: white;
   position: fixed;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  margin-top: 2.5rem;
-  margin-left: 10rem;
-  color: #ffffff;
+  border-radius: 10px;
+  margin-left: -0px;
+  margin-top: 35vh;
 }
 
-#live-chat .back {
-  position: absolute;
-  margin-left: 2rem;
-  margin-top: 2.3rem;
-}
+.button-ok{
+    width: 300px;
+    height: 50px;
+    margin-top: 5vh;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2a3785;
+    text-align: center;
+    color: white;
+    border-radius: 6px;
+    font-family: Poppins;
+    font-weight: medium;
+    margin-left: -5px;
+  }
 
-#live-chat .bubble-chat {
-  position: absolute;
-  width: 330px;
-  height: 74px;
-  margin-left: 3rem;
-  margin-top: 1rem;
+  .chat {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 10.5rem;
+    margin-left: 16.5rem;
+  
+    background: #eff5fe;
+    border-radius: 100px;
+    filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.3));
+  }
 
-  background: #fff;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
-}
-#live-chat .text-chat {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12.5px;
-  line-height: 16px;
-  margin-top: 1rem;
-  margin-left: 1.5rem;
-  color: #000000;
-}
+ .live-chat-image {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin-top: 0.8rem;
+    margin-left: 0.9rem;
+  }
 
-#live-chat .bubble-chat-1 {
-  position: absolute;
-  width: 330px;
-  height: 50px;
-  margin-left: 3rem;
-  margin-top: 6rem;
+  .ellipse-bar {
+    position: absolute;
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 100%;
+    margin-left: 1rem;
+    margin-top: 0rem;
+  
+    background: #000000;
+  }
+  
 
-  background: #fff;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
-}
+  .enter-password-title{
+    width: 400px;
+    height: 60px;
+    background-color: #2a3785;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 23px;
+    padding-left: 120px;
+    color: white;
+    font-family: "Poppins";
+    font-size: 15px;
+  }
 
-#live-chat .time {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 10px;
-
-  margin-left: 3.5rem;
-  margin-top: 9.8rem;
-}
-
-#live-chat .bar {
-  position: fixed;
-  width: 400px;
-  height: 69px;
-  margin-left: 0rem;
-  margin-top: 23.8rem;
-
-  background: #ffffff;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
-}
-
-#live-chat .home {
-  position: fixed;
-  margin-left: 1rem;
-  margin-top: 1.2rem;
-}
-
-#live-chat .kolom-chat {
-  position: absolute;
-  width: 268px;
-  height: 32px;
-  margin-left: 3rem;
-  margin-top: -1.9rem;
-}
-
-#live-chat .type {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 10px;
-
-  margin-left: 1rem;
-  margin-top: 0.6rem;
-}
-
-#live-chat .lampiran {
-  position: fixed;
-  margin-left: 21rem;
-  margin-top: -1.7rem;
-}
-
-#live-chat .chat-image {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 100%;
-  margin-left: 0.5rem;
-  margin-top: 7rem;
-}
-
-#login {
-  background-color: var(--grey);
-  height: 100%;
-  width: 100%;
-}
-
-#login .circle-bg {
-  width: 400px;
-  height: 300px;
-  background-color: var(--blue);
-  border-radius: 0px 0px 80px 80px;
-}
-
-#login .text-welcome {
-  position: absolute;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 33px;
-  color: #ffffff;
-  opacity: 0.8;
-  margin-top: 4rem;
-  margin-left: 9rem;
-}
-
-#login .circle-logo {
-  position: absolute;
-  margin-top: 8rem;
-  margin-left: 5rem;
-}
-
-#login .circle-logo img {
-  position: absolute;
-  width: 340px;
-  height: 340px;
-  margin-top: -5rem;
-  margin-left: -18.5rem;
-}
-
-#login .text-login {
-  position: absolute;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 33px;
-  color: var(--blue);
-  opacity: 0.8;
-  margin-top: 24.3rem;
-  margin-left: 10rem;
-}
-
-#login .login-form {
-  position: absolute;
-  width: 21rem;
-  margin-top: 8rem;
-  margin-left: 2rem;
-  background-color: var(--grey);
-}
-
-#login .button input {
-  width: 16.8rem;
-  background-color: var(--blue);
-  height: 3.25rem;
-  margin-top: 0.5rem;
-  margin-left: -4.5rem;
-}
-
-#login .button a {
-  text-decoration: none;
-  color: var(--white);
-}
-
-#login .button-fingerprint button {
-  width: 4rem;
-  background-color: var(--blue);
-  height: 3.25rem;
-  margin-top: -5rem;
-  margin-left: 17rem;
-}
-
-#login .mb-1 input {
-  height: 5;
-}
-
-#login .alert {
-  position: absolute;
-  height: 3rem;
-  width: 25rem;
-  background-color: #a01212;
-}
-
-#login .alert img {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 1.1rem;
-}
-
-#login .alert p {
-  font-size: 12px;
-  margin-top: -2.3rem;
-  color: var(--white);
-  margin-left: 2rem;
-}
-
-#error {
-  display: none;
+  #pin{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin: 5px;
+    border: none;
+    margin-left: 50px;
+    font-size: 20px;
+    background-color: gray;
 }

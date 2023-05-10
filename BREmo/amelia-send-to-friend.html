@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>BREmo</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style/amelia-style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <section id="launch_screen">
+                <div class="container">
+                    <div class="back-header"></div>
+                    <div class="mini-header">
+                        <div class="back-button">
+                            <a href="sendi-sendMoney.html">
+                                <img src="img/back-arrow.png" alt="logo">
+                            </a>
+                        </div>
+                        <div class="title">
+                            <p style="color: white; margin-top: -45px; margin-left: 40px;">Send to Friend</p>
+                        </div>
+                    </div>
+                    <div class="form" style="position: absolute;">
+                        <div class="card" style="width: 21rem; height: 20rem; ">
+                            <div class="card-body">
+                                <img src="img/profile-account.png" alt="Profile Account" style="position: absolute; width: 50px; height: 51px;">
+                                <p class="card-text" style="margin-left: 75px;">T****A</p>
+                                <p class="card-text" style="margin-left: 75px; margin-top: 20px; font-size: 12px;">0896552273862</p>
+                                <hr style="margin-top: 60px;">
+                                <p class="card-text" style="margin-left: 0px; margin-top: 0px; font-size: 12px;">SEND AMOUNT</p>
+                                <form action="#">
+                                    <input type="text" class="form-control-lg" style="margin-left: -15px; margin-top: 20px; border: none; border-color: transparent; outline: none;" placeholder="Rp 2.000.000" >
+                                    <input type="text" class="form-control form-control-sm" style="width: 275px; margin-top: 20px;" placeholder="&nbsp &nbsp &nbsp &nbsp Writes a notes 'For lunch P'">
+                                    <div class="logo-message" style="position: absolute; margin-top: -25px; margin-left: 10px;">
+                                        <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.3075 0.602219C15.5466 0.602219 16.7386 1.08745 17.6155 1.95813C18.4933 2.82698 18.9839 3.99886 18.9839 5.22568V12.4584C18.9839 15.0128 16.8864 17.0819 14.3075 17.0819H5.17935C2.60046 17.0819 0.503906 15.0128 0.503906 12.4584V5.22568C0.503906 2.67133 2.59122 0.602219 5.17935 0.602219H14.3075ZM15.7776 6.58984L15.8516 6.51659C16.0724 6.25109 16.0724 5.86656 15.8414 5.60106C15.713 5.46464 15.5365 5.38133 15.3526 5.36302C15.1586 5.35294 14.9738 5.41795 14.8342 5.54612L10.6679 8.84206C10.132 9.28243 9.36416 9.28243 8.81992 8.84206L4.66192 5.54612C4.37456 5.33555 3.97724 5.36302 3.73792 5.61021C3.48844 5.85741 3.46072 6.25109 3.67232 6.52575L3.79336 6.64477L7.99756 9.89493C8.515 10.2978 9.1424 10.5175 9.79936 10.5175C10.4545 10.5175 11.093 10.2978 11.6095 9.89493L15.7776 6.58984Z" fill="#8B98B1"/>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="form-control form-control-sm" style="width: 275px; margin-top: 10px;" placeholder="Last Transfer : 08 May 2022" disabled>
+                                    <p class="card-text" style="margin-left: 0px; margin-top: 15px; font-size: 12px; color: gray;">FROM : </p>
+                                    <select class="card-text" name="dompet" id="dompet" onchange="pilihDompet()" style="margin-left: 40px; margin-top: 16px; border-style: none; font-size: 12px; font-weight: 600;">
+                                        <option value="main" style="font-size: 12px;" selected>Main Pocket</option>
+                                        <option value="dompetA" style="font-size: 12px;">Dompet A</option>
+                                        <option value="dompetB" style="font-size: 12px;">Dompet B</option>
+                                        <option value="dompetC" style="font-size: 12px;">Dompet C</option>
+                                        <option value="dompetD" style="font-size: 12px;">Dompet D</option>
+                                   </select>
+                                   <p class="card-text" style="margin-left: 190px; margin-top: 15px; font-size: 12px;" id="total"></p>
+                                  
+                                </form>
+                            </div>
+                            <div class="alert" role="alert" id="kurang-saldo" style="margin-top: 350px; width: 330px; height: 85px; border-radius: 15px;">
+                                <img src="img/warning.png" alt="Warning" />
+                                <p>Sorry, your balance is insufficient for this transaction. Please top up your pocket to proceed.</p>
+                            </div>
+                          </div>
+                            <div style="position:absolute;">
+                                <button type="button" class="button btn btn-secondary" id="submit" onclick="showPopup()" style="width: 340px; margin-left: -10px;">SEND</button>                          
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="shadow-popup">
+                    <div id="enter-password">
+                        <div class="enter-password-title">Verification Process</div>
+                        <p style="font-family:Poppins; color:#344874; text-align:center; font-weight: bold; font-size:15px; margin-top:35px">
+                            Enter Your Pin
+                        </p>
+                        <div style="margin-top: 50px;">
+                            <a href="amelia-success.html">
+                                <input type="password" id="pin" style="margin-left: 90px;" disabled>
+                                <input type="password" id="pin" style="margin-left: 130px;" disabled>
+                                <input type="password" id="pin" style="margin-left: 170px;" disabled>
+                                <input type="password" id="pin" style="margin-left: 210px;" disabled>
+                                <input type="password" id="pin" style="margin-left: 250px;" disabled>
+                                <input type="password" id="pin" style="margin-left: 290px;" disabled>
+                            </a>
+                        </div>
+                        <p style="font-family:Poppins; color:#344874; text-align:center; font-weight: bold; font-size:12px; margin-top: 150px">
+                            Forgot Password?
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        function pilihDompet(){
+            let data = document.getElementById("dompet").value; 
+            let a = document.getElementById("total"); 
+            switch(data)
+            {
+                case 'main': 
+                    a.innerHTML = "Rp. 159.537.000"; 
+                        document.getElementById("kurang-saldo").style.display = "none";
+                        document.getElementById("submit").removeAttribute('disabled');
+                    break;
+                case 'dompetA': 
+                    a.innerHTML = "Rp. 10.000.000"; 
+                    document.getElementById("kurang-saldo").style.display = "none";
+                    document.getElementById("submit").removeAttribute('disabled');
+                    break;
+                case 'dompetB': 
+                    a.innerHTML = "Rp. 15.000.000"; 
+                    document.getElementById("kurang-saldo").style.display = "none";
+                    document.getElementById("submit").removeAttribute('disabled');
+                    break;
+                case 'dompetC': 
+                    a.innerHTML = "Rp. 25.000.000"; 
+                    document.getElementById("kurang-saldo").style.display = "none";
+                    document.getElementById("submit").removeAttribute('disabled');
+                    break;
+                case 'dompetD': 
+                    a.innerHTML = "Rp. 1.000.000"; 
+                    document.getElementById("kurang-saldo").style.display = "block";
+                    document.getElementById("submit").disabled = true;
+                    break; 
+                    default: 
+                    document.getElementById("total").innerHTML = ''; 
+            }
+        }
+    </script>
+
+    <script>
+        function showPopup() {
+            document.getElementById("shadow-popup").style.display = "block";
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
