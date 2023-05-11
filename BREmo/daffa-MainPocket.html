@@ -58,7 +58,7 @@
                       <!-- Add Balance -->
                     <div class="col">
                       <!-- <button class="tombol-icon" onclick="showAddBalance()"> -->
-                      <button class="tombol-icon" type="button" data-bs-toggle="modal" data-bs-target="#add-balance">
+                      <button class="tombol-icon" type="button" data-bs-toggle="modal" data-bs-target="#choose-method">
                           <div class="bg-icon">
                               <img src="img/top-up-balance.png" alt="" width="40px">                                                     
                           </div>
@@ -72,13 +72,13 @@
   
                     <!-- Move Balance -->
                     <div class="col">
-                      <button class="tombol-icon">
+                      <button class="tombol-icon" data-bs-toggle="modal" data-bs-target="#choose-pocket">
                           <div class="bg-icon">
                               <img src="img/move-balance.png" alt="" width="37px">
                           </div>
                       </button>
   
-                      <a href="#">
+                      <a href="#" >
                           <h3>Move To</h3>
                       </a>
   
@@ -88,8 +88,7 @@
             </div>
         </center>
         <!-- Card Balance -->
-  
-  
+
         <!-- Card Goals -->
         <center>
           <div class="card-goals">
@@ -104,7 +103,9 @@
                       </div>
   
                       <div class="col-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#edit" data-bs-dismiss="modal" aria-label="Close">
                           <h4>Edit</h4>
+                        </a>  
                       </div>
                   </div>
   
@@ -129,6 +130,26 @@
           </div>
         </center>
         <!-- Card Goals -->
+
+        <!-- Choose Method Add Balance -->
+        <div class="modal fade" id="choose-method" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog dialog-choose-method">
+            <div class="modal-content content-choose-method">
+              <div class="modal-body modals-choose-method">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close">
+                  <p class="title">Move From Other Pocket</p>
+                </a>
+                <center>
+                  <hr>
+                </center>
+                <a href="daffa-TopUpMainPocket.html">
+                  <p class="title">Top Up From Banks / Others</p>                
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Choose Method Add Balance -->
 
         <!-- Modals Add-Balance -->
         <div class="modal fade" id="add-balance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -159,20 +180,20 @@
 
                 <!-- keterangan -->
                 <div class="keterangan">
-                  <p class="from">From: <span style="color: black;">Main Pocket</span> 
+                  <p class="from">From: <span class="dompet" style="color: black;">Main Pocket</span> 
                     <span>
                       <button style="border: none; background-color: transparent;" data-bs-toggle="modal" data-bs-target="#choose-pocket" data-bs-dismiss="modal" aria-label="Close">
                         <img src="img/dropdown-icon.png" alt="" width="15px" style="margin-bottom: 2px;">
                       </button>
                     </span>
-                </p>
+                  </p>
                   <p class="balance">Rp 159.537.000</p>
                 </div>
 
                 <!-- Button -->
                 <center>
                   <div class="button">
-                    <button type="button" class="btn btn-secondary">Add To This Pocket</button>
+                    <button type="button" class="btn btn-secondary" onclick="goToBudgeting()">Add To This Pocket</button>
                   </div>
                 </center>
               </div>
@@ -190,22 +211,30 @@
 
                 <!-- Pilihan pocket -->
                 <div class="option-pocket">
-                  <div class="d-flex justify-content-between">
-                    <p class="pocket">Main Pocket</p>
-                    <p class="balance">Rp 159.537.000</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="pocket">Dompet B</p>
-                    <p class="balance">Rp 15.000.000</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="pocket">Dompet C</p>
-                    <p class="balance">Rp 25.000.000</p>
-                  </div>
-                  <div class="d-flex justify-content-between">
-                    <p class="pocket">Dompet D</p>
-                    <p class="balance">Rp 1.000.000</p>
-                  </div>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="dompet-A-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Dompet A</p>
+                      <p class="balance">Rp 10.000.000</p>
+                    </div>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="dompet-B-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Dompet B</p>
+                      <p class="balance">Rp 15.000.000</p>
+                    </div>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="dompet-C-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Dompet C</p>
+                      <p class="balance">Rp 25.000.000</p>
+                    </div>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="dompet-D-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Dompet D</p>
+                      <p class="balance">Rp 1.000.000</p>
+                    </div>
+                  </a>
                 </div>
               </div>
             </div>
@@ -213,25 +242,46 @@
         </div>
         <!-- Modals Choose Pocket -->
 
-        <!-- Overlay choose pocket -->
-        <!-- <div class="overlay-choose-pocket">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <p class="title">Move From</p>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <p class="pocket">Main Pocket</p>
-              </div>
-              <div class="col">
-                <p class="balance">Rp 159.537.000</p>
+        <!-- Modals Edit Goals -->
+        <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog dialog-edit">
+            <div class="modal-content content-edit">
+              <div class="modal-body modals-edit">
+                <p class="title">Edit Pocket</p>
+
+                <!-- Form -->
+                <div class="form">
+                  <h4 class="question">Pocket Name</h4>
+                  <div class="input-group flex-nowrap" >
+                    <input type="text" class="form-control" placeholder="Dompet X" aria-label="Username" aria-describedby="addon-wrapping" style="border-top: none; border-left: none; border-right: none; border-bottom: 2px solid #000;">
+                  </div>
+                </div>
+                <div class="form">
+                  <h4 class="question">Description</h4>
+                  <div class="input-group flex-nowrap" >
+                    <input type="text" class="form-control" placeholder="Buat beli motor" aria-label="Username" aria-describedby="addon-wrapping" style="border-top: none; border-left: none; border-right: none; border-bottom: 2px solid #000;">
+                  </div>
+                </div>
+                <div class="form">
+                  <h4 class="question">Goals</h4>
+                  <div class="input-group flex-nowrap" >
+                    <input type="text" class="form-control" placeholder="Rp 15.000.000" aria-label="Username" aria-describedby="addon-wrapping" style="border-top: none; border-left: none; border-right: none; border-bottom: 2px solid #000;">
+                  </div>
+                </div>
+
+                <!-- Button -->
+                <center>
+                  <div class="button">
+                    <button type="button" class="btn btn-secondary" onclick="goToBudgeting()">Save</button>
+                  </div>
+                </center>
               </div>
             </div>
           </div>
-        </div> -->
-        <!-- Overlay choose pocket -->
+        </div>
+        <!-- Modals Edit Goals -->
+        
+        
       </div>
     </section>
 
