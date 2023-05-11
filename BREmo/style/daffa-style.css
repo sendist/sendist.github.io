@@ -708,6 +708,10 @@ html{
   background-color: #FFF;
 }
 
+.content-choose-method{
+  background-color: #FFF;
+}
+
 .dialog-add-balance{
   top: 348px;
 }
@@ -728,6 +732,10 @@ html{
 
 .dialog-edit{
   top: 205px;
+}
+
+.dialog-choose-method{
+  top: 540px;
 }
 
 /* add balance */
@@ -1007,3 +1015,66 @@ html{
   width: 50%;
 }
 
+/* choose method */
+.modals-choose-method .title{
+  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 0;
+  text-align: start;
+  margin-left: 20px;
+  /* margin-bottom: 20px; */
+  padding-bottom: 15px;
+}
+
+.modals-choose-method hr{
+  border: none;
+  border-top: 2px solid black; 
+  width: 90%;
+}
+
+.modals-choose-method a{
+  text-decoration: none;
+  color: #000;
+}
+
+#dompet-budgeting .judul{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #777777;
+  padding-left: 30px;
+}
+
+#dompet-budgeting .subjudul{
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #777777;
+  padding-left: 30px;
+  padding-top: 20px;
+}
+
+.bank-transfer{
+  padding-left: 10%;
+  padding-top: 5px;
+  margin-bottom: 0px;
+}
+
+.bank-transfer hr{
+  border: none;
+  border-top: 2px solid black; 
+  width: 87%;
+}
+
+#dompet-budgeting .see-more{
+  font-size: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #777777;
+  padding-left: 50px;
+  padding-top: 0px;
+  color: #4D8AF0;
+}
