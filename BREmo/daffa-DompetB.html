@@ -46,8 +46,9 @@
       </div>
       <!-- Navbar -->
   
+      <!-- Card Balance -->
       <div class="content">
-        <!-- Card Balance -->
+
         <center>
             <div class="card">
               <h1>Balance</h1>
@@ -56,7 +57,7 @@
                   <div class="row">
                       <!-- Add Balance -->
                     <div class="col">
-                      <button class="tombol-icon">
+                      <button class="tombol-icon" type="button" data-bs-toggle="modal" data-bs-target="#add-balance">
                           <div class="bg-icon">
                               <img src="img/top-up-balance.png" alt="" width="40px">                                                     
                           </div>
@@ -70,7 +71,7 @@
   
                     <!-- Reduce Balance -->
                     <div class="col">
-                      <button class="tombol-icon">
+                      <button class="tombol-icon" type="button" data-bs-toggle="modal" data-bs-target="#reduce-balance">
                           <div class="bg-icon">
                               <img src="img/reduce-balance.png" alt="" width="36px">                                                                         
                           </div>
@@ -84,7 +85,7 @@
   
                     <!-- Move Balance -->
                     <div class="col">
-                      <button class="tombol-icon">
+                      <button class="tombol-icon" type="button" data-bs-toggle="modal" data-bs-target="#choose-pocket">
                           <div class="bg-icon">
                               <img src="img/move-balance.png" alt="" width="37px">
                           </div>
@@ -114,9 +115,11 @@
                       <div class="col-7">
                           <h3>Your Goals</h3>
                       </div>
-  
+                      
                       <div class="col-3">
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#edit" data-bs-dismiss="modal" aria-label="Close">
                           <h4>Edit</h4>
+                        </a>  
                       </div>
                   </div>
   
@@ -141,10 +144,192 @@
           </div>
         </center>
         <!-- Card Goals -->
+
+        <!-- Modals Add-Balance -->
+        <div class="modal fade" id="add-balance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog dialog-add-balance">
+            <div class="modal-content content-add-balance">
+              <div class="modal-body modals-add-balance">
+                <p class="title">Please enter the amount you want to add to this pocket</p>
+                <!-- saldo yg ingin ditambahkan -->
+                <center>
+                  <h2 class="balance">Rp 1.000.000</h2>
+                  <hr style="border: none; border-top: 2px solid black;">
+                </center>
+                <!-- pilihan cepat -->
+                <div class="option-balance">
+                  <div class="saldo">
+                    <p>50.000</p>
+                  </div>
+                  <div class="saldo">
+                    <p>100.000</p>
+                  </div>
+                  <div class="saldo">
+                    <p>200.000</p>
+                  </div>
+                  <div class="saldo">
+                    <p>500.000</p>
+                  </div>
+                </div>
+
+                <!-- keterangan -->
+                <div class="keterangan">
+                  <p class="from">From: <span class="dompet" style="color: black;">Main Pocket</span> 
+                    <span>
+                      <button style="border: none; background-color: transparent;" data-bs-toggle="modal" data-bs-target="#choose-pocket" data-bs-dismiss="modal" aria-label="Close">
+                        <img src="img/dropdown-icon.png" alt="" width="15px" style="margin-bottom: 2px;">
+                      </button>
+                    </span>
+                  </p>
+                  <p class="balance">Rp 159.537.000</p>
+                </div>
+
+                <!-- Button -->
+                <center>
+                  <div class="button">
+                    <button type="button" class="btn btn-secondary">Add To This Pocket</button>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modals Add Balance -->
+
+        <!-- Modals Choose Pocket Add Balance-->
+        <div class="modal fade" id="choose-pocket" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog dialog-choose-pocket">
+            <div class="modal-content content-choose-pocket">
+              <div class="modal-body modals-choose-pocket">
+                <p class="title">Move From</p>
+
+                <!-- Pilihan pocket -->
+                <div class="option-pocket">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="main-pocket-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Main Pocket</p>
+                      <p class="balance">Rp 159.537.000</p>
+                    </div>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="dompet-A-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Dompet A</p>
+                      <p class="balance">Rp 10.000.000</p>
+                    </div>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="dompet-C-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Dompet C</p>
+                      <p class="balance">Rp 25.000.000</p>
+                    </div>
+                  </a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#add-balance" data-bs-dismiss="modal" aria-label="Close" class="dompet-D-link">
+                    <div class="d-flex justify-content-between">
+                      <p class="pocket">Dompet D</p>
+                      <p class="balance">Rp 1.000.000</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modals Choose Pocket Add Balance-->
+        
+        
+
+        <!-- Modals Reduce Balance -->
+        <div class="modal fade" id="reduce-balance" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog dialog-reduce-balance">
+            <div class="modal-content content-reduce-balance">
+              <div class="modal-body modals-reduce-balance">
+                <p class="title">Please enter the amount you want to reduce from this pocket</p>
+
+                <!-- Balance yang ingin dikurangi -->
+                <center>
+                  <h2 class="balance">Rp 1.000.000</h2>
+                  <hr style="border: none; border-top: 2px solid black;">
+                </center>
+
+                <!-- Button -->
+                <center>
+                  <div class="button">
+                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#confirmation" data-bs-dismiss="modal" aria-label="Close">Add To This Pocket</button>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modals Reduce Balance -->
+
+        <!-- Modals Confirmation Reduce Balance -->
+        <div class="modal fade" id="confirmation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog dialog-confirmation">
+            <div class="modal-content content-confirmation">
+              <div class="modal-body modals-confirmation">
+                <p class="title">Are You Sure?</p>
+                <center>
+                  <p class="subtitle">The balance in this pocket will be transferred to your main pocket</p>
+                </center>
+
+                <!-- Button -->
+                <div class="button">
+                  <div class="d-flex justify-content-around">
+                    <button type="button" class="btn btn-secondary cancel" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <button type="button" class="btn btn-secondary okay">Okay</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modals Confirmation Reduce Balance -->
+
+        <!-- Modals Edit Goals -->
+        <div class="modal fade" id="edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog dialog-edit">
+            <div class="modal-content content-edit">
+              <div class="modal-body modals-edit">
+                <p class="title">Edit Pocket</p>
+
+                <!-- Form -->
+                <div class="form">
+                  <h4 class="question">Pocket Name</h4>
+                  <div class="input-group flex-nowrap" >
+                    <input type="text" class="form-control" placeholder="Dompet X" aria-label="Username" aria-describedby="addon-wrapping" style="border-top: none; border-left: none; border-right: none; border-bottom: 2px solid #000;">
+                  </div>
+                </div>
+                <div class="form">
+                  <h4 class="question">Description</h4>
+                  <div class="input-group flex-nowrap" >
+                    <input type="text" class="form-control" placeholder="Buat beli motor" aria-label="Username" aria-describedby="addon-wrapping" style="border-top: none; border-left: none; border-right: none; border-bottom: 2px solid #000;">
+                  </div>
+                </div>
+                <div class="form">
+                  <h4 class="question">Goals</h4>
+                  <div class="input-group flex-nowrap" >
+                    <input type="text" class="form-control" placeholder="Rp 15.000.000" aria-label="Username" aria-describedby="addon-wrapping" style="border-top: none; border-left: none; border-right: none; border-bottom: 2px solid #000;">
+                  </div>
+                </div>
+
+                <!-- Button -->
+                <center>
+                  <div class="button">
+                    <button type="button" class="btn btn-secondary" onclick="goToBudgeting()">Save</button>
+                  </div>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modals Edit Goals -->
+
       </div>
     </section>
 
     <!-- Optional JavaScript; choose one of the two! -->
+    <script src="daffa-main.js"></script>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
