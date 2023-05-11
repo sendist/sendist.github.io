@@ -349,8 +349,9 @@ html{
 }
 
 #dompet-budgeting{
-  height: 110vh;
+  height: 100vh;
   background-color: white;
+  position: relative;
 }
 
 .card-main{
@@ -631,22 +632,378 @@ html{
   color: #7E7676;
 }
 
-.keterangan .saldo{
+.modal-body .keterangan .balance{
   font-size: 13px;
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
+  color: #7E7676;
 }
 
 #dompet-budgeting .button button{
   max-width: 500px;
-  margin-top: 10px;
+  margin-top: 20px;
   padding-left: 50px;
   padding-right: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
   border-radius: 20px;
+  margin-bottom: 20px;
   background-color: #2A3785;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   font-size: 14px;
 }
+
+.overlay-choose-pocket{
+  width: 100%;
+  height: 30.5vh;
+  background-color: #EFF5FE;
+  margin-top: 30px;
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  justify-content: space-evenly;
+}
+
+.overlay-choose-pocket .title{
+  font-size: 17px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.overlay-choose-pocket .pocket{
+  font-size: 15px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+}
+
+.modal{
+  width: 100%;
+  position: absolute;
+}
+
+.content-add-balance{
+  background-color: #F1F6F5;
+}
+
+.content-choose-pocket{
+  background-color: #EFF5FE;
+}
+
+.content-choose-pocket-move-balance{
+  background-color: #EFF5FE;
+}
+
+.content-reduce-balance{
+  background-color: #F1F6F5;
+}
+
+.content-confirmation{
+  background-color: #F1F6F5;
+}
+
+.content-edit{
+  background-color: #FFF;
+}
+
+.dialog-add-balance{
+  top: 348px;
+}
+
+.dialog-choose-pocket{
+
+  /* tanpa button */
+  top: 466px;
+}
+
+.dialog-reduce-balance{
+  top: 405px;
+}
+
+.dialog-confirmation{
+  top: 255px;
+}
+
+.dialog-edit{
+  top: 205px;
+}
+
+/* add balance */
+.modals-add-balance .title{
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.modals-add-balance .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modals-add-balance .option-balance{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.modals-add-balance .option-balance p{
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  padding-top: 5px;
+  color: #2A3785;
+}
+
+.modals-add-balance .saldo{
+  width: 19%;
+  height: 27px;
+  background-color: #fff;
+  border-radius: 45%;
+}
+
+.modals-add-balance .keterangan{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 30px;
+  padding-top: 13px;
+}
+
+.modals-add-balance .keterangan button:hover{
+  opacity: 50%;
+}
+
+/* choose pocket */
+.modals-choose-pocket .title{
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modals-choose-pocket .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modals-choose-pocket .option-pocket{
+  padding-left: 20px;
+  padding-right: 20px;
+  /* margin-bottom: 25px; */
+}
+
+.modals-choose-pocket .option-pocket .pocket{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.modals-choose-pocket .option-pocket .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #7E7676;
+}
+
+#dompet-budgeting .modals-choose-pocket .button button{
+  max-width: 100%;
+  max-height: 30px;
+  font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  /* display: none; */
+}
+
+.modals-choose-pocket .button .text{
+  font-size: 10px;
+  margin-top: -3px;
+}
+
+/* Choose Pocket Move Balance */
+.modals-choose-pocket-move-balance .title{
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.modals-choose-pocket-move-balance .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modals-choose-pocket-move-balance .option-pocket{
+  padding-left: 20px;
+  padding-right: 20px;
+  /* margin-bottom: 25px; */
+}
+
+.modals-choose-pocket-move-balance .option-pocket .pocket{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.modals-choose-pocket-move-balance .option-pocket .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #7E7676;
+}
+
+#dompet-budgeting .modals-choose-pocket-move-balance .button button{
+  max-width: 100%;
+  max-height: 30px;
+  font-size: 10px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  /* display: none; */
+}
+
+.modals-choose-pocket-move-balance .button .text{
+  font-size: 10px;
+  margin-top: -3px;
+}
+
+/* reduce balance */
+.modals-reduce-balance .title{
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 40px;
+}
+
+.modals-reduce-balance .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modals-reduce-balance .option-pocket{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 25px;
+}
+
+.modals-reduce-balance .option-pocket .pocket{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.modals-reduce-balance .option-pocket .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #7E7676;
+}
+
+.modals-reduce-balance .button{
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* Confirmation Reduce Balance */
+.modals-confirmation .title{
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 10px;
+}
+
+.modals-confirmation .subtitle{
+  font-size: 13px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #7E7676;
+}
+
+.modals-confirmation .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.modals-confirmation .option-pocket{
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 25px;
+}
+
+.modals-confirmation .option-pocket .pocket{
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.modals-confirmation .option-pocket .balance{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #7E7676;
+}
+
+#dompet-budgeting .modals-confirmation .button .cancel{
+  background-color: #727E96;
+}
+
+#dompet-budgeting .modals-confirmation .button button:hover{
+  opacity: 50%;
+}
+
+.option-pocket a{
+  text-decoration: none;
+  color: #000;
+}
+
+/* Modals Edit */
+.modals-edit .title{
+  font-size: 17px;
+  padding-top: 30px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  padding-top: 20px;
+  margin-bottom: 0;
+}
+
+.modals-edit .question{
+  font-size: 16px;
+}
+
+.modals-edit .form{
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 35px;
+}
+
+.modals-edit .button{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.modals-edit .button button{
+  width: 50%;
+}
+

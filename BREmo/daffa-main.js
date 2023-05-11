@@ -1,9 +1,48 @@
-function showAddBalance() {
-    document.querySelector(".overlay-add-balance").style.display = "block";
-    document.getElementById("dompet-budgeting").style.backgroundColor = "rgba(0, 0, 0, 0.1)";
-    document.querySelector("#dompet-budgeting .card").style.backgroundColor = "rgb(129, 129, 129)";
-    document.querySelector("#dompet-budgeting .card-goals").style.backgroundColor = "rgb(120, 123, 122)";
-    document.querySelector("#dompet-budgeting .card h1").style.color = "rgb(95,93,93)";
-    document.querySelector("#dompet-budgeting .card-goals h4").style.color = "rgb(44,56,121)";
-    
+const mainPocketLink = document.querySelector(".main-pocket-link");
+const dompetALink = document.querySelector(".dompet-A-link");
+const dompetBLink = document.querySelector(".dompet-B-link");
+const dompetCLink = document.querySelector(".dompet-C-link");
+const dompetDLink = document.querySelector(".dompet-D-link");
+
+// Fungsi untuk memperbarui nilai balance pada modal "add-balance"
+function updateBalance(balance, pocket) {
+    const balanceModal = document.querySelector(".keterangan .balance");
+    const dompet = document.querySelector(".keterangan .dompet")
+    balanceModal.textContent = balance;
+    dompet.textContent = pocket;
+}
+
+// Event listener untuk setiap hyperlink
+if(mainPocketLink){
+    mainPocketLink.addEventListener("click", function() {
+        updateBalance("Rp 159.537.000", "Main Pocket");
+    });
+}
+
+if (dompetALink) {
+  dompetALink.addEventListener("click", function() {
+      updateBalance("Rp 10.000.000", "Dompet A");
+  });
+}
+
+if (dompetBLink) {
+  dompetBLink.addEventListener("click", function() {
+      updateBalance("Rp 15.000.000", "Dompet B");
+  });
+}
+
+if (dompetCLink) {
+  dompetCLink.addEventListener("click", function() {
+      updateBalance("Rp 25.000.000", "Dompet C");
+  });
+}
+
+if (dompetDLink) {
+  dompetDLink.addEventListener("click", function() {
+      updateBalance("Rp 1.000.000", "Dompet D");
+  });
+}
+
+function goToBudgeting() {
+    window.location.href = "daffa-budgeting.html"; // Ganti dengan URL halaman budgeting yang diinginkan
 }
