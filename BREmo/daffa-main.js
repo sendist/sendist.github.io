@@ -46,3 +46,35 @@ if (dompetDLink) {
 function goToBudgeting() {
     window.location.href = "daffa-budgeting.html"; // Ganti dengan URL halaman budgeting yang diinginkan
 }
+
+
+// Mengubah nilai pada pilihan saldo secara cepat
+const optionSaldo1 = document.querySelector(".option1");
+const optionSaldo2 = document.querySelector(".option2");
+const optionSaldo3 = document.querySelector(".option3");
+const optionSaldo4 = document.querySelector(".option4");
+const saldoSpan = document.querySelector(".isi-saldo");
+
+if (optionSaldo1) {
+  optionSaldo1.addEventListener("click", function() {
+    saldoSpan.textContent = "50.000";
+  });
+}
+
+if (optionSaldo2) {
+  optionSaldo2.addEventListener("click", function() {
+    saldoSpan.textContent = "100.000";
+  });
+}
+
+if (optionSaldo3) {
+  optionSaldo3.addEventListener("click", function() {
+    saldoSpan.textContent = "200.000";
+  });
+}
+
+if (optionSaldo4) {
+  optionSaldo4.addEventListener("click", function() {
+    saldoSpan.textContent = "500.000";
+  });
+}
