@@ -713,29 +713,51 @@ html{
 }
 
 .dialog-add-balance{
-  top: 348px;
+  /* top: 348px; */
+  margin-bottom: 0;
+  width: 400px;
+  bottom: 0;
+  position: fixed;
 }
 
 .dialog-choose-pocket{
 
   /* tanpa button */
-  top: 466px;
+  /* top: 466px; */
+
+  margin-bottom: 0;
+  width: 400px;
+  bottom: 0;
+  position: fixed;
 }
 
 .dialog-reduce-balance{
-  top: 405px;
+  /* top: 405px; */
+  margin-bottom: 0;
+  width: 400px;
+  bottom: 0;
+  position: fixed;
 }
 
 .dialog-confirmation{
   top: 255px;
+
 }
 
 .dialog-edit{
-  top: 205px;
+  /* top: 205px; */
+  margin-bottom: 0;
+  width: 400px;
+  bottom: 0;
+  position: fixed;
 }
 
 .dialog-choose-method{
-  top: 540px;
+  /* top: 540px; */
+  margin-bottom: 0;
+  width: 400px;
+  bottom: 0;
+  position: fixed;
 }
 
 /* add balance */
