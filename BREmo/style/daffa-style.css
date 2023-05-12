@@ -1078,3 +1078,7 @@ html{
   padding-top: 0px;
   color: #4D8AF0;
 }
+
+#dompet-budgeting .option-balance a{
+  text-decoration: none;
+}
